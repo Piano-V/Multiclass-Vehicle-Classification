@@ -25,13 +25,13 @@ An end-to-end, statistically grounded machine learning pipeline classifying vehi
 
 | Model Architecture | Training Acc | 5-Fold CV Acc | Generalization Gap | Finding |
 | :--- | :---: | :---: | :---: | :--- |
-| **Logistic Regression ($C=0.1$)** | **89.60%**[cite: 8, 9] | **89.41%**[cite: 8, 9] | **0.18%**[cite: 7, 8] | Best individual generalization; minimal variance |
-| **XGBoost** (depth=3, lr=0.04)[cite: 9] | 92.09%[cite: 9] | 88.49%[cite: 9, 10] | 3.60%[cite: 9] | Captures residual non-linear interactions |
-| **QDA** | 89.42%[cite: 7] | 88.67%[cite: 7] | 0.75%[cite: 7] | Non-linear quadratic decision boundary |
-| **Random Forest** (depth=10)[cite: 9] | 94.13%[cite: 9] | 88.13%[cite: 9] | 6.00%[cite: 9] | Overfits to training bootstrap samples |
-| **Decision Tree** (Unrestricted)[cite: 8] | 94.15%[cite: 8] | 84.00%[cite: 8] | 10.15%[cite: 8] | Severe overfitting as tree depth increases |
-| **Gaussian Naive Bayes** | 84.70%[cite: 7] | 84.72%[cite: 7] | -0.02%[cite: 7] | Limited by feature independence assumption |
-| **Final Weighted Ensemble** | — | **89.44%**[cite: 10, 12] | — | **92% LR + 8% XGBoost probability blend** |
+| **Logistic Regression ($C=0.1$)** | **89.60%** | **89.41%** | **0.18%** | Best individual generalization; minimal variance |
+| **XGBoost** (depth=3, lr=0.04) | 92.09% | 88.49% | 3.60% | Captures residual non-linear interactions |
+| **QDA** | 89.42% | 88.67% | 0.75% | Non-linear quadratic decision boundary |
+| **Random Forest** (depth=10) | 94.13% | 88.13% | 6.00% | Overfits to training bootstrap samples |
+| **Decision Tree** (Unrestricted) | 94.15% | 84.00% | 10.15% | Severe overfitting as tree depth increases |
+| **Gaussian Naive Bayes** | 84.70% | 84.72% | -0.02% | Limited by feature independence assumption |
+| **Final Weighted Ensemble** | — | **89.44%** | — | **92% LR + 8% XGBoost probability blend** |
 
 ---
 
